@@ -1,6 +1,8 @@
 ### lately, I'm join the community formally.(2023.9)
 <img align="left" src="https://github-readme-stats.vercel.app/api?username=leftmonster&include_all_commits=true&count_private-true&custom_title=leftmonster'%20GitHub%20Stats&line_height=30&show_icons=true&hide_border=true&bg_color=192133&title_color=efb752&icon_color=efb752&text_color=70bed9">
+
 <div style="width: 100%; height: 100%; margin: 0; padding: 0; overflow: hidden;">
+	<div style="background-color: #141417; display: flex; justify-content: center; align-items: center;">
 <svg width="512" height="512" viewBox="0 0 512 512" fill="none" overflow="hidden" xmlns="http://www.w3.org/2000/svg">
 <use href="#cube" x="128" y="320" stroke-width="2"  opacity="0.3">
 	<animate attributeName="stroke" dur="6s" repeatCount="indefinite"
@@ -143,6 +145,7 @@
 	</path>
 </defs>
 </svg>
+</div>
 </div>
 <!--
 **LeftMonster/leftmonster** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
