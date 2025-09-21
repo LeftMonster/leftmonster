@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LeftMonster's GitHub Page</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: url("images/background.jpg") no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      font-family: "Segoe UI", Arial, sans-serif;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 40px 20px;
+      position: relative;
+    }
+
+    .overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: 0;
+    }
+
+    .content {
+      z-index: 1;
+      max-width: 900px;
+    }
+
+    h1, h2, p, li {
+      margin: 10px 0;
+      line-height: 1.6;
+    }
+
+    .stats {
+      margin: 20px 0;
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+
+    button {
+      margin: 10px;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      background: #4CAF50;
+      color: white;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background: #45a049;
+    }
+
+    #langBtn {
+      background: #2196F3;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 14px;
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay"></div>
+  <div class="content" id="intro">
+    <!-- Default English content -->
+    <h1>🎶 Welcome to my GitHub Page 🎶</h1>
+    <h2>Lately, I joined the community formally (2023.9)</h2>
+
+    <div class="stats">
+      <img src="https://github-readme-stats.vercel.app/api?username=leftmonster&include_all_commits=true&count_private=true&custom_title=leftmonster%27s%20GitHub%20Stats&line_height=30&show_icons=true&hide_border=true&bg_color=192133&title_color=efb752&icon_color=efb752&text_color=70bed9" alt="GitHub Stats">
+    </div>
+
+    <p>☘☘☘☘ 被网络抢劫了 ☘☘☘☘</p>
+
+    <ul style="text-align: left; display: inline-block;">
+      <li>🔭 I’m currently working on とうきょうだいがく</li>
+      <li>🌱 I’m currently learning all kinds of CS (コンピュータサイエンス)</li>
+      <li>👯 I’m looking to collaborate on ...</li>
+      <li>🤔 I’m looking for help with ...</li>
+      <li>📫 How to reach me: Data Science & CyberSecurity【赛博保安】</li>
+      <li>😄 Pronouns: ...</li>
+      <li>⚡ Fun fact: ...</li>
+    </ul>
+
+    <div>
+      <img src="https://github.com/LeftMonster/leftmonster/blob/main/github-contribution-grid-snake.svg" alt="Snake animation">
+    </div>
+
+    <!-- Music player -->
+    <audio id="bgm" autoplay loop muted>
+      <source src="music/Sultan.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <!-- Buttons -->
+    <div>
+      <button onclick="unmute()">Enable Sound</button>
+      <button id="langBtn" onclick="toggleLang()">中文 / English</button>
+    </div>
+
+    <!-- Visitor count -->
+    <footer>
+      <p>👀 Visitors: <img src="https://visitor-badge.laobi.icu/badge?page_id=LeftMonster.github-page" alt="visitor badge"></p>
+    </footer>
+  </div>
+
+  <script>
+    const intro = document.getElementById("intro");
+    let isEnglish = true;
+
+    function unmute() {
+      const bgm = document.getElementById("bgm");
+      bgm.muted = false;
+      bgm.play();
+    }
+
+    function toggleLang() {
+      if (isEnglish) {
+        intro.innerHTML = `
+          <h1>🎶 欢迎来到我的 GitHub 页面 🎶</h1>
+          <h2>最近，我正式加入了社区 (2023.9)</h2>
+
+          <div class="stats">
+            <img src="https://github-readme-stats.vercel.app/api?username=leftmonster&include_all_commits=true&count_private=true&custom_title=leftmonster%27s%20GitHub%20Stats&line_height=30&show_icons=true&hide_border=true&bg_color=192133&title_color=efb752&icon_color=efb752&text_color=70bed9" alt="GitHub Stats">
+          </div>
+
+          <p>☘☘☘☘ 被网络抢劫了 ☘☘☘☘</p>
+
+          <ul style="text-align: left; display: inline-block;">
+            <li>🔭 我目前在 とうきょうだいがく 学习/工作</li>
+            <li>🌱 我正在学习各种 CS（コンピュータサイエンス）</li>
+            <li>👯 我正在寻找合作机会 ...</li>
+            <li>🤔 我正在寻求帮助 ...</li>
+            <li>📫 联系方式: Data Science & CyberSecurity【赛博保安】</li>
+            <li>😄 称谓: ...</li>
+            <li>⚡ 趣事: ...</li>
+          </ul>
+
+          <div>
+            <img src="https://github.com/LeftMonster/leftmonster/blob/main/github-contribution-grid-snake.svg" alt="Snake animation">
+          </div>
+
+          <audio id="bgm" autoplay loop muted>
+            <source src="music/Sultan.mp3" type="audio/mpeg">
+          </audio>
+
+          <div>
+            <button onclick="unmute()">开启声音</button>
+            <button id="langBtn" onclick="toggleLang()">English / 中文</button>
+          </div>
+
+          <footer>
+            <p>👀 历史访问人数: <img src="https://visitor-badge.laobi.icu/badge?page_id=LeftMonster.github-page" alt="visitor badge"></p>
+          </footer>
+        `;
+      } else {
+        location.reload(); // 刷新恢复英文默认页面
+      }
+      isEnglish = !isEnglish;
+    }
+  </script>
+</body>
+</html>
