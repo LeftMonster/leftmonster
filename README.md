@@ -13,6 +13,6 @@
 
 ![](https://github.com/LeftMonster/leftmonster/blob/main/github-contribution-grid-snake.svg)
 
-Please Check this profile!!!!~~~
+🌐 Check this link!!!!~~~ Visit My Profile
 <br>
 <a href="https://leftmonster.github.io/">https://leftmonster.github.io/</a>
