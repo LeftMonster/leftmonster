@@ -12,3 +12,81 @@
 - ⚡ Fun fact: ...
 
 ![](https://github.com/LeftMonster/leftmonster/blob/main/github-contribution-grid-snake.svg)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My GitHub Music Page</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #111;
+      color: #fff;
+      font-family: sans-serif;
+      text-align: center;
+    }
+    button {
+      margin: 10px;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      background: #4CAF50;
+      color: white;
+    }
+    #langBtn {
+      background: #2196F3;
+    }
+  </style>
+</head>
+<body>
+  <!-- Intro text (default English) -->
+  <div id="intro">
+    <h1>🎶 Welcome to my page 🎶</h1>
+    <p>This page comes with background music. Click the button below to enable sound.</p>
+  </div>
+
+  <!-- Background music -->
+  <audio id="bgm" autoplay loop muted>
+    <source src="music/Sultan.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <!-- Buttons -->
+  <button onclick="unmute()">Enable Sound</button>
+  <button id="langBtn" onclick="toggleLang()">中文 / English</button>
+
+  <script>
+    const intro = document.getElementById("intro");
+    let isEnglish = true;
+
+    function unmute() {
+      const bgm = document.getElementById("bgm");
+      bgm.muted = false;
+      bgm.play();
+    }
+
+    function toggleLang() {
+      if (isEnglish) {
+        intro.innerHTML = `
+          <h1>🎶 欢迎来到我的主页 🎶</h1>
+          <p>本页面带有背景音乐，请点击下方按钮开启声音。</p>
+        `;
+        document.getElementById("langBtn").innerText = "English / 中文";
+      } else {
+        intro.innerHTML = `
+          <h1>🎶 Welcome to my page 🎶</h1>
+          <p>This page comes with background music. Click the button below to enable sound.</p>
+        `;
+        document.getElementById("langBtn").innerText = "中文 / English";
+      }
+      isEnglish = !isEnglish;
+    }
+  </script>
+</body>
+</html>
