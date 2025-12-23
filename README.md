@@ -3,7 +3,7 @@
 
 被网络抢劫了☘☘☘☘
 
-- 🔭 I’m currently working on とうきょうだいがく
+- 🔭 I’m currently working on CN Financial Company.
 - 🌱 I’m currently learning all kinds of CS（コンピュータサイエンス）.
 - 👯 I’m looking to collaborate on ...
 - 🤔 I’m looking for help with ...
